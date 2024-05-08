@@ -1,0 +1,69 @@
+## Summary 
+
+## Building blocks for programming
+- any program you might want to write
+- objects
+- functions and modules
+- graphics, sound, and image i/o
+- arrays
+- conditionals and loops
+- math text i/o
+- primitive data types and assignment statements
+
+### data type
+
+- data type: a set of values and a set of operations on those values
+### built-in data types in Java
+
+- string: for **input and output** * Java like put things into string
+- int: integers, for math calculations
+- double: with floating points, for science and math apps
+- boolean: true or false, for decision-making in program
+
+### convert
+- parseInt()
+- toString()
+
+### control flow
+- the *sequance* of statements that are actually executed in a program
+- <span style="color:blue"> conditionals and loops </span>enable us to choreograph control flow
+
+### if statement 
+<br> 
+execute certain statements depending on the values of variables
+
+- evaluate a **boolean expression**
+- if true, execute a statement
+- if flase, use else option
+
+### for loop
+- evaluate an initialization statement
+- boolean
+- true, execute,increment repeat if satisfies boolean
+
+```java
+// This demonstrates "every for loop has a while statement
+// for loop is more compact obviously
+public class PowerOfTwo {
+    public static void main(String[] args){
+        int v = 1;
+        int n = Integer.parseInt(args[0]);
+        for (int i = 0; 1<= n; i++){ // the difference lies in  the initialization statement
+            System.out.println(i + " " + v);
+            v = 2*v;
+        }
+    }
+}
+public class PowerOfTwo {
+    public static void main(String[] args){
+        int v = 1;
+        int n = Integer.parseInt(args[0]);
+        int i = 0;
+        while (i<= n;){
+            System.out.println(i + " "+ v);
+            v = 2*v;
+            i++;
+        }
+    }
+}
+```
