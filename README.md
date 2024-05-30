@@ -295,3 +295,14 @@ fundamental abstractions:
 
 ### dynamic programming
 - save subproblem's answer to avoid exponential waste pitfalls
+
+## Algorithms and data structures
+- performance
+- sorting and searching
+- stack and queue
+
+### performance
+- binary logarithms:
+   - the number of bits in the binary representation of N is
+      $$1 + lg N$$ 
+   - *bit (binary digit)* is the smallest unit of data that a computer can process and store, a byte is a sequence of eight bits
