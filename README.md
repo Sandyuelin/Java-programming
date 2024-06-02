@@ -306,3 +306,9 @@ fundamental abstractions:
    - the number of bits in the binary representation of N is
       $$1 + lg N$$ 
    - *bit (binary digit)* is the smallest unit of data that a computer can process and store, a byte is a sequence of eight bits
+
+- doubling method
+   - to estimate the time of simulation
+   - for debugging?
+   
+![StdDraw](https://github.com/Sandyuelin/Java-programming/blob/51149e57ca5f90a41ba9abf7dab21e62645e846f/week_7/Screenshot%202024-06-02%20144022.png)
