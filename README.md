@@ -312,3 +312,13 @@ fundamental abstractions:
    - for debugging?
    
 ![StdDraw](https://github.com/Sandyuelin/Java-programming/blob/51149e57ca5f90a41ba9abf7dab21e62645e846f/week_7/Screenshot%202024-06-02%20144022.png)
+
+
+
+## Object-oriented programming (OOP)
+- abstract data types:a data type whose representation is hidden from the client
+- OOP
+   - create ur own data types (representation is hidden from the client)
+   - use them in ur programs
+   - clients can use ADTs w/o knowing implementation details
+   - **a natural vehicle to study abstract models of the real world** 
