@@ -322,3 +322,6 @@ fundamental abstractions:
    - use them in ur programs
    - clients can use ADTs w/o knowing implementation details
    - **a natural vehicle to study abstract models of the real world** 
+
+### creating a data type
+![StdDraw](https://github.com/Sandyuelin/Java-programming/blob/62177a50351b291af11afd0b27480d55ad4da84d/week_9/Screenshot%202024-06-06%20140332.png)
