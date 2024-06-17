@@ -1,14 +1,4 @@
 # Java-programming
-2024.5.3-2024.6.6
-<br>
-
- **Special thanks to one previous TA in cs201 who made me determine to study this course and the old teacher who calmly taught the course.**
-<br>
-
-I spent a month learning the course and completed all the assignments required with the help of google, chatGPT, and previous learners' work. To be honest, I feel really bad when copying paste provided code for the homework and think myself APOS.Though I thought I might understand the code, I knew deeply in my heart that I could not use them well. As a result, I will continue my journey in computer science. Actually, I also hope to start some side projects to get rid of my reliance on tutorials and implement my current knowledge pool to solve real-life problems. 
-
-- [ ] for familiarity: one class per day till the 24 fall session
-- [ ] for advance: reading the textbook of [cs textbook](https://introcs.cs.princeton.edu/java/10elements/)
 
 
 ## Building blocks for programming
