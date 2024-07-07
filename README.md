@@ -330,3 +330,23 @@ fundamental abstractions:
    - enable modular programming
    - facilitate debugging
    - clarify program code
+## Sorting and searching
+- whitelist case: use of ```compareTo()``` which is based on the unicode value of each character in the strings.
+return 0 is the string is equal to the other string
+- binary search
+- sorting: rearrange items into ascending order
+- Moore's law: the number of transistors in an integrated circuit doubles about every two years
+   - implications: memory size doubles
+   - processor speed doubles every two years
+- scalability: an algorithm _scales_ if its running time doubles when the problem size doubles
+   - bottom line: need algorithm scales to keep pace w/ Moore's law.
+- mergesort:
+  - divide array into two halves
+  - recursively sort each half
+  - merge two halves to make sorted whole
+- longest repeats in a string(LRS)
+  - form suffix strings
+    (suffix of string: any substring of the string which includes
+  the last letter)
+  - sort suffix strings
+  - find longest lcp among adjacent entries
