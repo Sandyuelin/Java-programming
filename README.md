@@ -350,3 +350,76 @@ return 0 is the string is equal to the other string
   the last letter)
   - sort suffix strings
   - find longest lcp among adjacent entries
+
+## Stack and queue 
+```
+- two data types for manipulating arbitrarily large collections of jects
+- each is characterized by four operations:
+create the collection,
+insert an item,
+remove an item,
+test emptiness
+- always remember the graph that shows stack and queue
+```
+
+#### stack operations: 
+- __take in and out at the beginning__
+  - add an item to the collection
+  - remove and return the item most recently added
+  - test if the collection is empty
+  - return the size of the collection
+- postfix arithmetic expression evaluation
+  - value: push onto the stack
+  - operator: pop operands, apply operator, push the result
+```java
+import java.util.Stack;
+
+public class Postfix {
+    public static void main(String[] args) {
+        Stack<Double> stack = new Stack<Double>();
+
+        while (!StdIn.isEmpty()) {
+            String token = StdIn.readString();
+
+            if (token.equals("+")) {
+                double operand2 = stack.pop();
+                double operand1 = stack.pop();
+                double result = operand1 + operand2;
+                stack.push(result);
+            } else if (token.equals("-")) {
+                double operand2 = stack.pop();
+                double operand1 = stack.pop();
+                double result = operand1 - operand2;
+                stack.push(result);
+            } else if (token.equals("*")) {
+                double operand2 = stack.pop();
+                double operand1 = stack.pop();
+                double result = operand1 * operand2;
+                stack.push(result);
+            } else if (token.equals("/")) {
+                double operand2 = stack.pop();
+                double operand1 = stack.pop();
+                double result = operand1 / operand2;
+                stack.push(result);
+            } else {
+                // Assuming token is a numbber, push it onto the stack
+                double number = Double.parseDouble(token);
+                stack.push(number);
+            }
+        }
+
+        // The final result will be at the top of the stack
+        if (!stack.isEmpty()) {
+            double finalResult = stack.pop();
+            System.out.println("Result: " + finalResult);
+        } else {
+            System.out.println("No valid expression provided.");
+        }
+    }
+}
+
+```
+- PostScript: a virtual machine with stack application
+- JVM(java virtual machine) 
+#### queue operations: __take from the beginning and add to the end__
+
