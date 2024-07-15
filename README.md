@@ -423,3 +423,27 @@ public class Postfix {
 - JVM(java virtual machine) 
 #### queue operations: __take from the beginning and add to the end__
 
+### Linked lists
+data structure: sequential vs. linked
+- linked data structure
+  - associate with each object a link to another one
+  - machine: link is memory address of next object
+  - java: link is reference to next object
+- linked list
+  - def: a linked list is null or a reference to a node
+  - def: a node is a data type that contains a reference to a node
+
+### Symbol table
+- associative array abstraction: index of array is _string_ value
+- def: an ADT whose values are sets of key-value pairs
+- operations:
+    - associate a key w a value(add the key if not in table)
+    - return the value
+    - test if a given key is in the table
+    - iterate through keys
+- hash table: divide keys into m groups, 
+keys in an linked list and use sequential search 
+- binary search tree(BST)
+  - def: a null/ a reference to a BST node
+  - a BST node: reference to a key, a value, and two BSTs, a left and right subtree
+  - 
