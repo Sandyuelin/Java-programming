@@ -446,4 +446,27 @@ keys in an linked list and use sequential search
 - binary search tree(BST)
   - def: a null/ a reference to a BST node
   - a BST node: reference to a key, a value, and two BSTs, a left and right subtree
-  - 
+
+
+## theory of computing
+- abstract machines:
+  - mathematical model of computation
+  - defined by specific rules for transforming input to output
+  - deterministic finite automata (DFAs) 
+    - solve pattern matching problem  
+    - each defines a language that it can recognize
+- formal language
+  - a set of strings
+  - each defined by specific rules that characterize it
+  - regular expression
+     - define and specify a language; recognize the string belongs to the concept or not
+     - three categories: expand the alphabet, shorthand notation, extension to closure operation
+  
+```
+questions: 
+is a given string defined by a given RE or not
+can a dfa help answer this question?
+answer:
+REs and DTAs are equivalent to define a set of strings
+Equivalence theorem: given any RE, there exists a DFA that accepts the same sef of strings; vice versa
+```
