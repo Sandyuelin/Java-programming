@@ -470,3 +470,19 @@ answer:
 REs and DTAs are equivalent to define a set of strings
 Equivalence theorem: given any RE, there exists a DFA that accepts the same sef of strings; vice versa
 ```
+
+
+### Turing computer
+- def: an abstract model of computation
+   - reads and writes characters on the tape (x:x, if reads x, writes the latter x)
+   - move left or right
+   - halt and leave result of the computation
+- pro: performing a single algorithm, are more like a software than hardware;
+- con: need to build seperate TMs for each algorithm; which is highly impractical 
+### universality
+Universal Turing Machine (UTM):  consists both a program and its data
+- interaction machines are natural generalizations of TMs that accept synchronous or asynchronous input streams
+
+### computability
+- solvable: algorithm exists to __solve__ a particular problem
+  
