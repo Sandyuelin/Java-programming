@@ -35,9 +35,14 @@
 
 - data type: a set of values and a set of operations on those values
 ### built-in data types in Java
-
+```
+eight primitive data types: boolean, char,byte,short,int,long,float,and double
+string is not primitive but still built-in
+```
 - string: for **input and output** * Java like put things into string
 - int: integers, for math calculations
+   - stored by binary number system; a bit is a single binary digit (0/1)
+   - This sequence of bits $b_n 2^n + b_{n-1} 2^{n-1} + \dots + b_2 2^2 + b_1 2^1 + b_0 2^0$ represents an integer.
 - double: with floating points, for science and math apps
 - boolean: true or false, for decision-making in program
 
