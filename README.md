@@ -1,6 +1,11 @@
 # Java-programming
 
 
+## How Java Works
+- java file read by java compiler, and compiler generates byte codes, and processed by JVM, and process on operating systems
+- program.java -> java compiler ->  program.class ->jvm -> program
+- java virtual machine is __platform dependent__ on the operating systems and hardware
+
 ## Building blocks for programming
 - any program you might want to write
 - objects, methods, inheritance[^1],encapsulation[^2],polymorphism[^3]
@@ -36,19 +41,33 @@
 - data type: a set of values and a set of operations on those values
 ### built-in data types in Java
 ```
-eight primitive data types: boolean, char,byte,short,int,long,float,and double
+eight primitive data types: byte,short,int,long,float, and double (bit increased in order) boolean (true or false) char(16 bit unicode)
 string is not primitive but still built-in
 ```
 - string: for **input and output** * Java like put things into string
 - int: integers, for math calculations
    - stored by binary number system; a bit is a single binary digit (0/1)
-   - This sequence of bits $b_n 2^n + b_{n-1} 2^{n-1} + \dots + b_2 2^2 + b_1 2^1 + b_0 2^0$ represents an integer.
+   - This sequence of bits \( b_n 2^n + b_{n-1} 2^{n-1} + \dots + b_2 2^2 + b_1 2^1 + b_0 2^0 \) represents an integer.
 - double: with floating points, for science and math apps
 - boolean: true or false, for decision-making in program
 
-### convert
+*java is statically typed programming check types at compile time while the 
+dynamically typed one check at run-time*
+### Type conversion
+- a data type __automatically__ converted into another data type at compile time
+- destination type should be bigger than source type, as known as __widening conversion__
 - Integer.parseInt()
 - toString()
+
+### Type casting
+- conversion set by programmer 
+- destination is smaller than source, as known sa __narrowing conversion__
+```
+x = (int) a * b
+```
+### operators
+arithmetic, comparison, logical, increment,conditional,assignment, compound assignment
+
 
 ### control flow
 - the *sequance* of statements that are actually executed in a program
