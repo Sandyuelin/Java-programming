@@ -1,43 +1,34 @@
-package week_2;
-
 public class DayOfWeek {
-    public static void main(String[] args) {
-        int m = Integer.parseInt(args[0]);
-        int d = Integer.parseInt(args[1]);
-        int y = Integer.parseInt(args[2]);
-        y = y - (14 - m) / 12;
-        int x = y + y / 4 - y / 100 + y / 400;
-        m = m + 12 * ((14 - m) / 12) - 2;
-        d = (d + x + 31 * m / 12) % 7;
-        if (d == 1) System.out.println("Monday");
-        else if (d == 2) System.out.println("Tuesday");
-        else if (d == 3) System.out.println("Wednesday");
-        else if (d == 4) System.out.println("Thursday");
-        else if (d == 5) System.out.println("Friday");
-        else if (d == 6) System.out.println("Saturday");
-        else System.out.println("Sunday");
+
+    enum Day {
+        MON, TUE, WED, THU, FRI, SAT, SUN
     }
-}
-/* switch (d) {
-            case 1:
-                System.out.println("Monday");
+
+    public static void main(String[] args) {
+        Day day = Day.MON;  // You can change this to any day of the week
+
+        switch (day) {
+            case MON:
+                System.out.println("This is tough.");
                 break;
-            case 2:
-                System.out.println("Tuesday");
+            case TUE:
+                System.out.println("This is getting better.");
                 break;
-            case 3:
-                System.out.println("Wednesday");
+            case WED:
+                System.out.println("Half way there.");
                 break;
-            case 4:
-                System.out.println("Thursday");
+            case THU:
+                System.out.println("I can see the light.");
                 break;
-            case 5:
-                System.out.println("Friday");
+            case FRI:
+                System.out.println("Now we are talking.");
                 break;
-            case 6:
-                System.out.println("Saturday");
+            case SAT:
+            case SUN:
+                System.out.println("Day off!");
                 break;
             default:
-                System.out.println("Sunday");
-                break;
-This is how it use switch*/
+                System.out.println("Invalid day!");
+        }
+    }
+}
